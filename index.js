@@ -9,10 +9,13 @@ app.get('/test', function(request, response) {
 	response.send('Node.js and Express running on port='+port)
 })
 
+
+
 const bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({extended: true}));
 
 const mongoose = require("mongoose");
+//lol2
 
 const mongooseUri = "mongodb+srv://signupsheet:lol2@cluster0.liijka6.mongodb.net/lol" ;
 mongoose.connect(mongooseUri, {useNewUrlParser: true}, {useUnifiedTopology: true})
@@ -50,6 +53,8 @@ app.get("/read", function(request, response) {
 		response.send(renderNotes(notes));
 	})
 })
+
+
 
 
 
