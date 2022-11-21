@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 const mongoose = require("mongoose");
 
-const mongooseUri = "mongodb+srv://dantheman:lover@cluster0.dygp0oq.mongodb.net/name" ;
+const mongooseUri = "mongodb+srv://signupsheet:lol2@cluster0.liijka6.mongodb.net/lol" ;
 mongoose.connect(mongooseUri, {useNewUrlParser: true}, {useUnifiedTopology: true})
 const movieSchema = {
 	title: String,
@@ -50,8 +50,6 @@ app.get("/read", function(request, response) {
 		response.send(renderNotes(notes));
 	})
 })
-
-
 
 
 
